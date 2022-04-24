@@ -1,6 +1,5 @@
 import React from 'react';
 import illustration from '../assets/img/illustrations/illustration-stay-productive.png';
-import arrowIcon from '../assets/img/icons/icon-arrow.svg';
 
 
 export default function About () {
