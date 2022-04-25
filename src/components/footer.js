@@ -28,7 +28,7 @@ export default function Footer () {
                     <div className="contact">
                         <address>
                             <img src={location} alt="Location icon"/>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                            <p>7468 East Eagle Dr. Braintree, MA 02184</p>
                         </address>
                         <ul>
                             <li><a href="tel:00000000000"><img src={phone} alt="Phone icon" /> +1-543-123-4567 </a></li>
