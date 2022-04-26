@@ -10,7 +10,8 @@
   text-decoration: none;
 }
 
-html, body {
+html,
+body {
   min-height: 100%;
   scroll-behavior: smooth;
 }
@@ -90,14 +91,15 @@ header nav i.toggler {
   display: none;
 }
 
-main {
+section:not(#hero) {
+  padding: 40px 30px;
   width: 80%;
   max-width: 1400px;
   margin: 0 auto;
 }
 
-section {
-  padding: 40px 30px;
+section:not(#hero) {
+  margin-bottom: 60px;
 }
 
 #hero {
@@ -150,7 +152,11 @@ section {
   font-weight: 700;
   font-size: 1.05rem;
   border-radius: 50px;
-  background: linear-gradient(to right, rgb(86, 226, 216) 15%, rgb(57, 153, 173));
+  background: linear-gradient(
+    to right,
+    rgb(86, 226, 216) 15%,
+    rgb(57, 153, 173)
+  );
   transition: color 0.3s ease;
 }
 #hero a::before {
@@ -159,7 +165,11 @@ section {
   inset: 0;
   z-index: -1;
   display: block;
-  background: linear-gradient(to left, rgb(38, 238, 225) 15%, rgb(84, 229, 255));
+  background: linear-gradient(
+    to left,
+    rgb(38, 238, 225) 15%,
+    rgb(84, 229, 255)
+  );
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -168,10 +178,6 @@ section {
 }
 #hero a:hover::before {
   opacity: 1;
-}
-
-section:not(#hero) {
-  margin-bottom: 60px;
 }
 
 #features {
@@ -209,11 +215,10 @@ section:not(#hero) {
 #about {
   display: flex;
   justify-content: space-between;
-  gap: 60px;
+  gap: 120px;
   align-items: center;
 }
 #about .illustration {
-  width: 100%;
   max-width: 640px;
   -webkit-user-select: none;
   user-select: none;
@@ -294,7 +299,7 @@ section:not(#hero) {
   -webkit-user-select: none;
   user-select: none;
 }
-#team .card .author .role h4 {
+#team .card .author .role h3 {
   color: rgb(255, 255, 255);
   font-size: 0.85rem;
   font-weight: 600;
@@ -366,14 +371,14 @@ footer .card-early-access fieldset input::placeholder {
   -webkit-user-select: none;
   user-select: none;
 }
-footer .card-early-access fieldset input[type=email] {
+footer .card-early-access fieldset input[type="email"] {
   color: rgb(103, 103, 103);
   background-color: rgb(255, 255, 255);
 }
-footer .card-early-access fieldset input[type=email]::placeholder {
+footer .card-early-access fieldset input[type="email"]::placeholder {
   color: rgb(161, 161, 161);
 }
-footer .card-early-access fieldset input[type=submit] {
+footer .card-early-access fieldset input[type="submit"] {
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -383,23 +388,31 @@ footer .card-early-access fieldset input[type=submit] {
   font-size: 0.95rem;
   font-weight: 600;
   color: rgb(236, 236, 236);
-  background: linear-gradient(to right, rgb(86, 226, 216) 15%, rgb(57, 153, 173));
+  background: linear-gradient(
+    to right,
+    rgb(86, 226, 216) 15%,
+    rgb(57, 153, 173)
+  );
   transition: color 0.3s ease;
 }
-footer .card-early-access fieldset input[type=submit]::after {
+footer .card-early-access fieldset input[type="submit"]::after {
   content: "";
   display: block;
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(to left, rgb(86, 226, 216) 15%, rgb(57, 153, 173));
+  background: linear-gradient(
+    to left,
+    rgb(86, 226, 216) 15%,
+    rgb(57, 153, 173)
+  );
   opacity: 1;
   transition: opacity 0.3s ease;
 }
-footer .card-early-access fieldset input[type=submit]:hover {
+footer .card-early-access fieldset input[type="submit"]:hover {
   color: rgb(255, 255, 255);
 }
-footer .card-early-access fieldset input[type=submit]:hover::before {
+footer .card-early-access fieldset input[type="submit"]:hover::before {
   opacity: 1;
 }
 footer .container {
@@ -655,7 +668,7 @@ footer .attribution p a {
     width: 100%;
     padding: 15px 20px;
   }
-  footer .card-early-access fieldset input[type=submit] {
+  footer .card-early-access fieldset input[type="submit"] {
     display: block;
     width: 100%;
     max-width: none;

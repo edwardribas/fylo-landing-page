@@ -4,7 +4,6 @@ import './assets/css/styles.css';
 
 // Components
 import Header from './components/header.js';
-import Hero from './pages/hero.js';
 import Main from './components/main.js';
 import Footer from './components/footer.js';
 
@@ -15,7 +14,6 @@ const root = ReactDOM.createRoot(document.querySelector('#root'));
 root.render(
 <>
     <Header />
-    <Hero />
     <Main />
     <Footer />
 </>

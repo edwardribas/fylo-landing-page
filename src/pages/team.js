@@ -10,7 +10,7 @@ function Card (props){
             <div className="author">
                 <img src={props.src} alt="Fylo's team member"/>
                 <div className="role">
-                    <h4>{props.name}</h4>
+                    <h3>{props.name}</h3>
                     <p>{props.role}</p>
                 </div>
             </div>

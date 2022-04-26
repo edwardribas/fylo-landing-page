@@ -115,13 +115,18 @@ header{
 
 
 // Main and Sections
-main{
+section:not(#hero){
+    padding: 40px 30px;
     width: 80%;
     max-width: 1400px;
     margin: 0 auto;
 }
-section{
-    padding: 40px 30px;
+
+
+
+// Sections
+section:not(#hero){
+    margin-bottom: 60px;
 }
 
 // Hero
@@ -196,11 +201,6 @@ section{
     }
 }
 
-// Sections
-section:not(#hero){
-    margin-bottom: 60px;
-}
-
 // Features
 #features{
     padding-top: 60px;
@@ -238,10 +238,9 @@ section:not(#hero){
 #about{
     display: flex;
     justify-content: space-between;
-    gap: 60px;
+    gap: 120px;
     align-items: center;
     .illustration{
-        width: 100%;
         max-width: 640px;
         -webkit-user-select: none;
         user-select: none;
@@ -325,7 +324,7 @@ section:not(#hero){
                 user-select: none;
             }
             .role{
-                h4{
+                h3{
                     color: $neutral;
                     font-size: .85rem;
                     font-weight: 600;

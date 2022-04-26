@@ -52,9 +52,9 @@ export default function Footer () {
                     </div>
                     <div className="icons">
                         <ul>
-                            <li><a href="#"><i className="fa-brands fa-facebook"></i></a></li> {/*eslint-disable-line*/}
-                            <li><a href="#"><i className="fa-brands fa-twitter"></i></a></li> {/*eslint-disable-line*/}
-                            <li><a href="#"><i className="fa-brands fa-instagram"></i></a></li> {/*eslint-disable-line*/}
+                            <li><a href="#" aria-label="Visit us on Facebook"><i className="fa-brands fa-facebook"></i></a></li> {/*eslint-disable-line*/}
+                            <li><a href="#" aria-label="Visit us on Twitter"><i className="fa-brands fa-twitter"></i></a></li> {/*eslint-disable-line*/}
+                            <li><a href="#" aria-label="Visit us on Instagram"><i className="fa-brands fa-instagram"></i></a></li> {/*eslint-disable-line*/}
                         </ul>
                     </div>
                 </div>
