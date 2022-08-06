@@ -1,15 +1,16 @@
 import React from 'react';
-import illustration from '../assets/img/illustrations/illustration-stay-productive.png';
+import illustration from '../../assets/img/illustrations/illustration-stay-productive.png';
 import { faCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import styles from './styles.module.scss';
 
 export default function About () {
     return (
-        <section id="about">
-            <div className="illustration">
+        <section id="about" className={styles.about}>
+            <div className={styles.illustration}>
 				<img src={illustration} alt="Three people organizing an environment" />
 			</div>
-			<div className="text">
+			<div className={styles.text}>
 				<h2>Stay productive, wherever you are</h2>
 				<p>
 					Never let location be an issue when accessing your files. Fylo has you covered for all of your file

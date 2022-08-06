@@ -1,0 +1,100 @@
+@import '../../assets/styles/themes.scss';
+
+#hero{
+    padding: 120px 35px 200px;
+    background-image: url(../../assets/img/background/bg-curvy-desktop.svg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: $main_background;
+
+    img{
+        display: block;
+        margin: 0 auto 40px;
+        width: 90%;
+        max-width: 550px;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    .text{
+        max-width: 720px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 2.3rem;
+        font-family: 'Raleway', sans-serif;
+        line-height: 1.45;
+        margin-bottom: 20px;
+        font-weight: 600;
+        color: $neutral;
+    }
+    p {
+        color: rgb(222, 222, 222);
+        font-size: 1.15rem;
+        max-width: 585px;
+        margin: 0 auto;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+    a {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        -webkit-user-select: none;
+        user-select: none;
+        display: inline-block;
+        padding: 17px 100px;
+        color: rgb(230,230,230);
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 1.05rem;
+        border-radius: 50px;
+        background: linear-gradient(to right, rgb(86, 226, 216) 15%, rgb(57, 153, 173));
+        transition: color .3s ease;
+
+        &::before{
+            content: '';
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            display: block;
+            background: linear-gradient(to left, rgb(38, 238, 225) 15%, rgb(84, 229, 255));
+            opacity: 0;
+            transition: opacity .3s ease;
+        }
+
+        &:hover{
+            color: $neutral;
+            &::before{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media(max-width: 780px){
+    #hero{
+        padding: 90px 35px 80px;
+        background-image: url(../../assets/img/background/bg-curvy-mobile.svg);
+
+        .text{
+            width: 90%;
+        }
+        h1{
+            font-size: 1.85rem;
+        }
+        a{
+            padding: 14px 60px;
+        }
+    }
+}
+@media(max-width: 390px){
+    #hero{
+        h1{
+            font-size: 1.4rem;
+        }
+    }
+}

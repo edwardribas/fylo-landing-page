@@ -1,18 +1,18 @@
 import React from 'react';
-import IconLocation from '../assets/img/icons/icon-location.svg';
-import IconPhone from '../assets/img/icons/icon-phone.svg';
-import IconMail from '../assets/img/icons/icon-email.svg';
-import Logo from '../assets/img/logo.svg';
+import IconLocation from '../../assets/img/icons/icon-location.svg';
+import IconPhone from '../../assets/img/icons/icon-phone.svg';
+import IconMail from '../../assets/img/icons/icon-email.svg';
+import Logo from '../../assets/img/logo.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
-
+import styles from './styles.module.scss';
 
 const Link = props => <li><a href="#">{props.text}</a></li>  // eslint-disable-line
 
 export default function Footer () {
     return (
         <footer>
-            <div className="card-early-access">
+            <div className={styles.cardEarlyAccess}>
                 <h2>Get early access today</h2>
                 <p>
                     It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
@@ -24,10 +24,11 @@ export default function Footer () {
                     <input type="submit" value="Get Started For Free" />
                 </fieldset>
             </div>
-            <div className="container">
+
+            <div className={styles.container}>
                 <img src={Logo} alt="Fylo's logo" />
-                <div className="info-wrapper">
-                    <div className="contact">
+                <div className={styles.infoWrapper}>
+                    <div className={styles.contact}>
                         <address>
                             <img src={IconLocation} alt="Location icon"/>
                             <p>7468 East Eagle Dr. Braintree, MA 02184</p>
@@ -38,7 +39,7 @@ export default function Footer () {
                         </ul>
                     </div>
 
-                    <div className="links">
+                    <div className={styles.links}>
                         <ul>
                             <Link text="About Us"/>
                             <Link text="Jobs"/>
@@ -52,7 +53,8 @@ export default function Footer () {
                             <Link text="Privacy"/>
                         </ul>
                     </div>
-                    <div className="icons">
+
+                    <div className={styles.icons}>
                         <ul>
                             {/* eslint-disable-next-line */}
                             <li><a href="#" aria-label="Visit us on Facebook">  
@@ -71,7 +73,7 @@ export default function Footer () {
                 </div>
 
             </div>
-            <div className="attribution">
+            <div className={styles.attribution}>
                 <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer">Frontend Mentor</a> and coded by <a href="https://github.com/edwardribas" target="_blank" rel="noreferrer">Ribas</a>.</p>
             </div>
         </footer>

@@ -1,10 +1,11 @@
 import React from 'react';
+import styles from './styles.module.scss';
 
 // Pages
-import Hero from '../pages/hero.js';
-import Features from '../pages/features.js';
-import About from '../pages/about.js';
-import Team from '../pages/team.js';
+import Hero from '../../pages/Hero';
+import Features from '../../pages/Features';
+import About from '../../pages/About';
+import Team from '../../pages/Team';
 
 export default function Main () {
     return (

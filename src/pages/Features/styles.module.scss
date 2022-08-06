@@ -1,0 +1,36 @@
+@import '../../assets/styles/themes.scss';
+
+.features{
+    padding-top: 60px;
+
+    .wrapper{
+        display: flex;
+        justify-content: space-around;
+        max-width: 1150px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        gap: 50px;
+
+        .feature{
+            text-align: center;
+            width: 370px;
+            
+            img{
+                -webkit-user-select: none;
+                user-select: none;
+                display: inline-block;
+                margin-bottom: 30px;
+            }
+            h2{
+                color: $neutral;
+                font-family: 'Raleway', sans-serif;
+                font-weight: 700;
+                font-size: 1.2rem;
+                margin-bottom: 10px;
+            }
+            p{
+                color: rgb(185, 185, 185);
+            }
+        }
+    }
+}

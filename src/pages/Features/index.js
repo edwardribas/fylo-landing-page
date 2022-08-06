@@ -1,14 +1,15 @@
 import React from 'react';
 
 // Features Icons
-import icon1 from '../assets/img/features/icon-access-anywhere.svg';
-import icon2 from '../assets/img/features/icon-security.svg';
-import icon3 from '../assets/img/features/icon-collaboration.svg';
-import icon4 from '../assets/img/features/icon-any-file.svg';
+import icon1 from '../../assets/img/features/icon-access-anywhere.svg';
+import icon2 from '../../assets/img/features/icon-security.svg';
+import icon3 from '../../assets/img/features/icon-collaboration.svg';
+import icon4 from '../../assets/img/features/icon-any-file.svg';
+import styles from './styles.module.scss';
 
 function Feature (props) {
     return(
-        <div className="feature">
+        <div className={styles.feature}>
             <img src={props.src} alt={props.alt}/>
             <h2>{props.title}</h2>
             <p>{props.text}</p>
@@ -19,8 +20,8 @@ function Feature (props) {
 
 export default function Features () {
     return (
-        <section id="features">
-            <div className="wrapper">
+        <section id='features' className={styles.features}>
+            <div className={styles.wrapper}>
                 <Feature src={icon1} alt="Cross-platform devices illustration."
                 title="Access your files, anywhere" 
                 text="The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere."/>

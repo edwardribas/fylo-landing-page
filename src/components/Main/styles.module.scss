@@ -1,0 +1,9 @@
+@import '../../assets/styles/themes.scss';
+
+section:not(section:first-of-type){
+    padding: 40px 30px;
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
