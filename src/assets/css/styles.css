@@ -86,7 +86,7 @@ header nav ul li a:not(#signin):hover {
 header nav ul li a:not(#signin):hover::after {
   width: 70%;
 }
-header nav i.toggler {
+header nav button {
   display: none;
 }
 
@@ -475,15 +475,19 @@ footer .container .info-wrapper .icons ul {
   display: flex;
   gap: 10px;
 }
-footer .container .info-wrapper .icons ul i {
+footer .container .info-wrapper .icons ul a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
   color: white;
   font-size: 1.1rem;
   border-radius: 50%;
-  padding: 8px;
   border: 1px solid white;
   transition: 0.25s ease;
 }
-footer .container .info-wrapper .icons ul i:hover {
+footer .container .info-wrapper .icons ul a:hover {
   color: rgb(101, 226, 217);
   border-color: rgb(101, 226, 217);
 }
@@ -608,7 +612,10 @@ footer .attribution p a {
     padding: 0.7rem 1.5rem;
     border-radius: 6px;
   }
-  header nav i.toggler {
+  header nav button {
+    background-color: transparent;
+    outline: none;
+    border: none;
     display: block;
     font-size: 1.3rem;
     position: absolute;
@@ -619,13 +626,12 @@ footer .attribution p a {
     color: rgb(185, 185, 185);
     transition: color 0.2s ease;
   }
-  header nav i.toggler:hover {
+  header nav button:hover {
     color: rgb(239, 239, 239);
   }
   header nav > img {
     max-width: 100px;
   }
-
   #hero {
     padding: 90px 35px 80px;
     background-image: url(../img/background/bg-curvy-mobile.svg);
@@ -661,7 +667,6 @@ footer .attribution p a {
   #hero h1 {
     font-size: 1.4rem;
   }
-
   footer {
     margin-top: 350px;
   }

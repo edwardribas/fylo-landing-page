@@ -1,11 +1,13 @@
 import React from 'react';
+import IconLocation from '../assets/img/icons/icon-location.svg';
+import IconPhone from '../assets/img/icons/icon-phone.svg';
+import IconMail from '../assets/img/icons/icon-email.svg';
+import Logo from '../assets/img/logo.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
-import location from '../assets/img/icons/icon-location.svg';
-import phone from '../assets/img/icons/icon-phone.svg';
-import mail from '../assets/img/icons/icon-email.svg';
-import logo from '../assets/img/logo.svg';
 
-const Link = props => <li><a href="#">{props.text}</a></li> // eslint-disable-line
+const Link = props => <li><a href="#">{props.text}</a></li>  // eslint-disable-line
 
 export default function Footer () {
     return (
@@ -23,16 +25,16 @@ export default function Footer () {
                 </fieldset>
             </div>
             <div className="container">
-                <img src={logo} alt="Fylo's logo" />
+                <img src={Logo} alt="Fylo's logo" />
                 <div className="info-wrapper">
                     <div className="contact">
                         <address>
-                            <img src={location} alt="Location icon"/>
+                            <img src={IconLocation} alt="Location icon"/>
                             <p>7468 East Eagle Dr. Braintree, MA 02184</p>
                         </address>
                         <ul>
-                            <li><a href="tel:00000000000"><img src={phone} alt="Phone icon" /> +1-543-123-4567 </a></li>
-                            <li><a href="mailto:example@fylo.com"><img src={mail} alt="Mail icon" /> example@fylo.com </a></li>
+                            <li><a href="tel:00000000000"><img src={IconPhone} alt="Phone icon" /> +1-543-123-4567 </a></li>
+                            <li><a href="mailto:example@fylo.com"><img src={IconMail} alt="Mail icon" /> example@fylo.com </a></li>
                         </ul>
                     </div>
 
@@ -52,9 +54,18 @@ export default function Footer () {
                     </div>
                     <div className="icons">
                         <ul>
-                            <li><a href="#" aria-label="Visit us on Facebook"><i className="fa-brands fa-facebook"></i></a></li> {/*eslint-disable-line*/}
-                            <li><a href="#" aria-label="Visit us on Twitter"><i className="fa-brands fa-twitter"></i></a></li> {/*eslint-disable-line*/}
-                            <li><a href="#" aria-label="Visit us on Instagram"><i className="fa-brands fa-instagram"></i></a></li> {/*eslint-disable-line*/}
+                            {/* eslint-disable-next-line */}
+                            <li><a href="#" aria-label="Visit us on Facebook">  
+                                <FontAwesomeIcon icon={faFacebook}/>
+                            </a></li>
+                            {/* eslint-disable-next-line */}
+                            <li><a href="#" aria-label="Visit us on Twitter">
+                                <FontAwesomeIcon icon={faTwitter}/>
+                            </a></li>
+                            {/* eslint-disable-next-line */}
+                            <li><a href="#" aria-label="Visit us on Instagram">
+                                <FontAwesomeIcon icon={faInstagram}/>
+                            </a></li>
                         </ul>
                     </div>
                 </div>

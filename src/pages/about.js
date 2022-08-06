@@ -1,6 +1,7 @@
 import React from 'react';
 import illustration from '../assets/img/illustrations/illustration-stay-productive.png';
-
+import { faCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function About () {
     return (
@@ -19,7 +20,7 @@ export default function About () {
 					attachments required.
 				</p>
 
-				<a href="#">See how Fylo works <i className="fa-solid fa-circle-right"></i> </a> {/*eslint-disable-line*/}
+				<a href="#">See how Fylo works <FontAwesomeIcon icon={faCircleRight}/> </a> {/*eslint-disable-line*/}
 			</div>
         </section>
     )
