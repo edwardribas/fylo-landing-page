@@ -592,29 +592,31 @@ footer{
     footer{
         .container{
             max-width: 600px;
+            
             > img{
                 display: block;
                 margin: 0 auto 40px;
             }
+
             .info-wrapper{
                 flex-direction: column;
                 gap: 30px;
+
                 .contact{
                     width: 100%;
                     max-width: 350px;
                     margin: 0 auto;
                     gap: 20px;
                     flex-direction: column;
+
                     address{
                         flex-direction: column;
                         align-items: center;
                         text-align: center;
                         gap: 15px;
                         font-size: .95rem;
-                        img{
-                            // display: none;
-                        }
                     }
+
                     ul{
                         li{
                             a{
